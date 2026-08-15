@@ -45,6 +45,10 @@ calibrate, mechanical assembly.
    I2C traffic -> DNP them.
 5. **All populated SMD is on the BOTTOM layer.** Order single-side Economic
    assembly, bottom side. No double-side fee needed.
+6. **Surface finish = ENIG** (order-page dropdown at JLC; NOT a Gerber
+   property). Planar pads for the 0.5mm TQFP-48 mux, reliable castellated
+   mounting for the RP2040 Zero, no lead, no corrosion. Avoid leaded HASL
+   and OSP (bad for the later hand-soldering). Single-digit-$ premium.
 
 ## Returning checklist
 
@@ -77,6 +81,12 @@ calibrate, mechanical assembly.
       `PCBs/right.zip`, `PCBs/bom_rhs.csv`, `PCBs/cpl_rhs.csv`.
 - [ ] Order the switch plate Gerbers too if you want them fabricated:
       `PCBs/plate.zip` (bare PCB, no assembly).
+- [ ] Set surface finish to **ENIG** on the PCB quote page (critical fact
+      #6 below). It is an order-page dropdown, NOT in the Gerbers.
+- [ ] Add the case to the same shipment: upload
+      `Case/Lucca58HE Case Left.stl` + `Right.stl` to JLC3DP, pick
+      MJF PA12 (nylon), choose combine-shipment with the PCB order.
+      (No local printer - this replaces that step.)
 - [ ] Choose DDP shipping (DHL or FedEx) to the UK for predictable total.
 - [ ] Pay. Expected landed time to your door: ~2-3 weeks.
 
@@ -90,8 +100,6 @@ calibrate, mechanical assembly.
 - [ ] M2.5 fasteners: 3mm brass standoffs, 12mm flat-top screws, 6x0.4mm
       washers, 1.8mm nuts.
 - [ ] A USB-C data cable for the inter-half link (UART).
-- [ ] (Optional) 3D-print the case from `Case/Lucca58HE Case Left.stl` and
-      `Case/Lucca58HE Case Right.stl`, or send to a printing service.
 
 ### 4. Hand-solder through-hole (Phase 3, after delivery, ~1-2 hours)
 
@@ -149,7 +157,7 @@ calibrate, mechanical assembly.
 | `firmware/analogio.py` | KMK AnalogScanner (reads mux). |
 | `firmware/callibration.py` | Per-key ADC min/max - you fill this from calibrate.py. |
 | `firmware/calibrate.py` | The helper that prints min/max values to paste in. |
-| `Case/*.stl` | Case STLs for 3D printing. |
+| `Case/*.stl` | Case STLs - upload to JLC3DP, MJF PA12. |
 
 ## If something does not work
 

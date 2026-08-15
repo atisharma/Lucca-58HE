@@ -169,7 +169,12 @@ LHS uses a 0 Ohm resistor instead.
   - `PCBs/left.zip`, `PCBs/right.zip`, `PCBs/plate.zip`
   - 4-layer board, 1.6mm thickness
   - Order 5+ of each (minimum order)
-  - No special options needed for bare board
+  - **Surface finish: ENIG** (order-page dropdown; NOT a Gerber option).
+    0.5mm-pitch TQFP-48 wants planar pads, castellated RP2040 Zero
+    mounts wet reliably onto ENIG, and gold does not corrode on a board
+    that gets touched for years. Single-digit-dollar premium at
+    prototype qty. Avoid: leaded HASL (lead + domed pads), LF-HASL
+    (domed pads), OSP (film burns off under the later hand-solder work).
 
 ### Phase 2: Assembly Service Preparation
 
@@ -213,11 +218,21 @@ Only through-hole and parts JLCPCB can't place:
 
 ### Phase 4: 3D Printed Case
 
-- [ ] Send `Case/Lucca58HE Case Left.stl` and `Lucca58HE Case Right.stl`
-  to a 3D printing service (or print locally)
-  - Standard PLA or PETG is fine
-  - 0.15mm layer height minimum
-  - Check if supports are needed for the STL orientation
+No local printer -- the case comes from **JLC3DP** (JLC's own print
+service) so it can ride in the **same shipment as the PCBs/PCBA**
+(one DDP delivery, no second shipping fee, and the case stops being
+the long pole in the timeline).
+
+- [ ] Upload `Case/Lucca58HE Case Left.stl` and `Lucca58HE Case Right.stl`
+  to jlc3dp.com for an instant quote
+  - **MJF PA12 (nylon)** -- better surface + durability for a case you
+    handle daily; typically $10-30 for the pair, ~2 days
+  - FDM PLA/PETG is the cheaper option (parts from $0.30 minimum) but
+    visibly layer-lined
+  - Choose "combine shipment" with the PCB/PCBA order at checkout
+- [ ] Fallbacks: PCBWay 3D printing (second quote), a UK bureau via
+  Craftcloud/Hubs (~GBP 20-50), or frameless (switch plate + PCB on
+  the M2.5 standoffs, rubber feet -- no case at all)
 
 ### Phase 5: Firmware
 
@@ -388,7 +403,8 @@ the most fiddly hand-solder step.
 - Gateron Jade HE switches (~58 + spares): ~$1-2 each from vendors.
 - Keycaps: varies widely.
 - M2.5 fasteners (standoffs/screws/washers/nuts): a few dollars.
-- 3D-printed case (STLs in `Case/`): local print ~$10-30; service more.
+- 3D-printed case (STLs in `Case/`): ~$10-30 via JLC3DP MJF PA12,
+  bundled into the same shipment.
 - USB-C cable between halves (UART mode): standard data + charge cable.
 
 ### Bottom-line rough order of magnitude
@@ -424,11 +440,12 @@ Add on your side after delivery:
 - Hand-solder RP2040 Zero + USB-C: ~1-2 hours.
 - Flash CircuitPython + copy firmware + run `firmware/calibrate.py` +
   paste into `firmware/callibration.py`: ~1 hour.
-- 3D-print case (or send out): days to a week depending on service.
+- 3D-print case: comes in the same JLC shipment (MJF PA12, ~2 days fab
+  at JLC3DP) -- no longer the long pole.
 - Switch/keycap install + mechanical assembly: ~2 hours.
 
-**Plan for ~4-6 weeks total** from order to a fully assembled, working
-keyboard, with the 3D case the usual long pole.
+**Plan for ~3-4 weeks total** from order to a fully assembled, working
+keyboard; ENIG finish and JLC3DP add dollars, not days.
 
 Caveats: (1) larger 4-layer boards and current JLC promos move the
 bare-PCB line; (2) PCBA lead time is for in-stock basic/extended parts
