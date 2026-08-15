@@ -61,16 +61,33 @@ guaranteed to match JLC's library part orientations:
 
 **Before confirming the order**, step through JLC's online BOM/CPL preview and
 visually confirm the pin-1 / orientation overlay for at least:
-- the ADG732 mux (U1) -- pin 1 toward the correct corner,
+- the ADG732 mux (U1) -- pin 1 toward the correct corner (procedure below),
 - the DRV5053 sensors -- VCC on pad 1, OUT on pad 2, GND on pad 3 (see
   PLAN.md "Sensor choice" -- the board is wired for the DRV5053 DBZ pinout; an
   HX6659 will NOT work),
 - a few 0805 passives (rotation is less critical for symmetric pads).
 
-If the preview shows a wrong orientation, edit the Rotation column in
-`cpl_lhs.csv` / `cpl_rhs.csv` and re-upload. This rotation correction is the
-one step that cannot be automated from the PCB file alone -- it depends on
-JLC's library, which only their uploader can show.
+### Concrete pin-1 procedure for U1 (extracted from the kicad_pcb files)
+
+Facts: U1 sits on B.Cu both halves, diagonal. LHS board pos
+(188.01, 90.51), rot -45 deg (CPL value 315); RHS (346.98, -6.18),
+rot +45 deg (CPL value 45). In the footprint's own frame, pin 1 is the
+bottom pad of the LEFT column (pads 1-12 left column, 13-24 top,
+25-36 right, 37-48 bottom). LHS pin-1 net = A7; RHS = A22.
+
+1. KiCad anchor: open the kicad_pcb, Alt+3 (3D viewer), orbit to the
+   bottom face, find U1, note which physical corner of the board its
+   pin-1 chamfer points to (use a landmark, e.g. the USB-C edge).
+2. JLC anchor: in the upload preview, click U1; the part graphic's
+   pin-1 dot/chamfer must point to the SAME physical corner.
+3. Numbers are NOT the arbiter: JLC may show a rotation different from
+   our CPL values (their library footprint zero-frame differs from the
+   custom SU_48_ADI-M). Different number + correct corner = fine. Wrong
+   corner = fix.
+4. Fixes can be done per-part directly in JLC's placement table (they
+   allow rotation edits at the preview stage) instead of re-uploading
+   the CPL. If you do fix it there, note the corrected value and update
+   cpl_lhs.csv / cpl_rhs.csv to match for the next order.
 
 ## How these files were generated (reproducible)
 
