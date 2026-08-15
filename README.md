@@ -3,6 +3,35 @@ The Lucca 58HE is a 58 key hall effect split keyboard!
 
 This keyboard is still very much a work in progress!! Kicad files for PCBs and switch plate, 3d files for case all available. Currently working under KMK!
 
+---
+
+## Fork notes (atisharma/Lucca-58HE)
+
+This fork adds a **no-LED / no-OLED / UART** build track with order-ready
+JLCPCB deliverables and cleaned-up firmware. Upstream content below is
+preserved unchanged.
+
+- `PLAN.md` -- full build plan, net-traced BOM, ordering steps.
+- `PCBs/bom_lhs.csv`, `PCBs/bom_rhs.csv`, `PCBs/cpl_lhs.csv`,
+  `PCBs/cpl_rhs.csv` -- JLCPCB BOM + CPL for PCBA upload (populated SMD
+  only; 119 parts/side, all bottom layer).
+- `PCBs/bom_net_trace.csv`, `PCBs/inventory_full.csv` -- provenance + full
+  per-part classification (populated / DNP / hand-solder).
+- `PCBs/assembly_README.md` -- how to place the JLC order, including the
+  rotation-verification caveat.
+- `calibrate.py` -- raw-ADC per-key calibration helper (prints a
+  paste-ready `input_range` block for `callibration.py`).
+- Firmware edits: RGB extensions removed from both `code.py`, pinout
+  import fixed (`YD_RP2040` -> `waveshareRP2040zero`) in both `kb.py`,
+  `neopixel.py` deleted.
+
+Key correctness note: the KiCad `Value=HX6659ISO-B` field on every Hall
+sensor is a mislabel. The PCB pad assignment (1=VCC, 2=OUT, 3=GND)
+matches the DRV5053 DBZ pinout; the HX6659 swaps pins 2/3 and would
+short the mux input to GND. Use **DRV5053VAQDBZR** (LCSC C962159).
+
+---
+
 ![IMG_6700](https://github.com/user-attachments/assets/aa22d8b3-7bef-4428-90fe-1be624bb01be)
 
 ## Features

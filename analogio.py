@@ -8,6 +8,10 @@ from kmk.modules import Module
 from kmk.kmk_keyboard import KMKKeyboard
 from kmk.keys import KC
 from callibration import input_range
+# NOTE: this is a stale module-level instance. active_layers here does
+# not reflect layer changes on the real keyboard instance created in
+# code.py. Harmless while all actuation values are identical per layer,
+# but will break per-layer actuation if values differ.
 keyboard = KMKKeyboard()
 
 def mapping(val, input_range):

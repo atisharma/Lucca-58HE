@@ -5,8 +5,7 @@ from kmk.keys import KC
 from kmk.modules.layers import Layers
 from kmk.extensions.media_keys import MediaKeys
 from kmk.modules.mouse_keys import MouseKeys
-from kmk.extensions.RGB import RGB
-from kmk.extensions.rgb import AnimationModes
+# RGB extensions removed for no-LED build
 #from kmk.extensions.debug import Debug
 #keyboard.extensions.append(debug)
 
@@ -21,42 +20,7 @@ keyboard.extensions.append(MediaKeys())
 keyboard.debug_enabled = True
 
 
-under_rgb = RGB(pixel_pin=board.GP7,
-    num_pixels=10,
-    val_limit=100,
-    hue_default=0,
-    sat_default=100,
-    rgb_order=(1, 0, 2),  # GRB WS2812
-    val_default=100,
-    hue_step=5,
-    sat_step=5,
-    val_step=5,
-    animation_speed=1,
-    breathe_center=1,  # 1.0-2.7
-    knight_effect_length=3,
-    animation_mode=AnimationModes.STATIC,
-    reverse_animation=False,
-    refresh_rate=60,
-    )
-rgb = RGB(pixel_pin=board.GP3,
-    num_pixels=29,
-    val_limit=100,
-    hue_default=0,
-    sat_default=100,
-    rgb_order=(1, 0, 2),  # GRB WS2812
-    val_default=100,
-    hue_step=5,
-    sat_step=5,
-    val_step=5,
-    animation_speed=1,
-    breathe_center=1,  # 1.0-2.7
-    knight_effect_length=3,
-    animation_mode=AnimationModes.STATIC,
-    reverse_animation=False,
-    refresh_rate=60,
-    )
-keyboard.extensions.append(under_rgb)
-keyboard.extensions.append(rgb)
+# RGB extensions removed for no-LED build (no SK6803/SK6812 populated)
 
 # Key aliases
 _______ = KC.TRNS
