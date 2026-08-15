@@ -1,15 +1,11 @@
 # Lucca 58HE -- Hand-Soldering Notes
 
-STATUS: as of the JLC BOM/CPL update, J1 (USB-C) and U2 (RP2040 Zero)
-are in the BOM as THT lines for JLC placement. This file is the
-**fallback** -- only needed if you drop those rows and hand-solder, or
-for repairing a joint later.
-
-If JLC has placed them, the only manual step is powering up.
-
----
-
-(Original hand-soldering instructions follow, kept as reference.)
+STATUS: hand-soldering the RP2040 Zero and USB-C is back ON. We tried
+adding them to the JLC BOM as THT lines (J1/U2) on 2026-08-15; JLC
+flagged both catalogue parts as assembly-shortage and asked for
+substitution, so they were removed from the BOM instead. Substituting
+module/connector parts risks footprint/pinout drift; hand-soldering
+these four parts is the safer path.
 
 All SMD (119 parts per side) is placed by JLCPCB. You hand-solder only **four components** for the entire keyboard: 2x RP2040 Zero + 2x Molex USB-C.
 
