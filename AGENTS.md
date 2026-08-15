@@ -18,7 +18,7 @@ Building a no-LED Lucca 58HE split Hall Effect keyboard.
 - Resistor values (per side): ~29x 1.5k (sensor LPF), ~2x 4.7k (I2C pull-ups), ~few 0R (UART jumpers). Exact assignment needs net tracing.
 - For no-LED build: skip all SK6803/SK6812 LED footprints (29+10 per side), remove LED extensions from firmware.
 - Gerbers in `PCBs/{left,right,plate}.zip` are fabrication-ready.
-- Firmware cleanup needed: remove RGB extensions from code.py, fix pinout import (YD_RP2040 -> waveshareRP2040zero), strip neopixel.py.
+- Firmware cleanup DONE: RGB extensions removed from firmware/{left,right}/code.py, pinout import fixed (YD_RP2040 -> waveshareRP2040zero) in both kb.py, neopixel.py/boot.py/OLED variants/quickpin-duplicate deleted. Firmware lives under firmware/{left,right}/ plus shared analogio.py, callibration.py, calibrate.py.
 - RP2040 Zero and USB-C connector are through-hole; JLCPCB won't place them. Solder by hand.
 
 ## Conventions

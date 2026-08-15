@@ -63,7 +63,7 @@ calibrate, mechanical assembly.
       100nF C C1711, USB-C C5119949, RP2040 Zero C5350143.
 - [ ] `python3 -m py_compile` on the four firmware files if you touched
       them - confirm still OK:
-      `python3 -m py_compile "LEFT KB AND CODE/code.py" "LEFT KB AND CODE/kb.py" "RIGHT KB AND CODE/code.py" "RIGHT KB AND CODE/kb.py" analogio.py callibration.py calibrate.py`
+      `python3 -m py_compile firmware/left/code.py firmware/left/kb.py firmware/right/code.py firmware/right/kb.py firmware/analogio.py firmware/callibration.py firmware/calibrate.py`
 
 ### 2. Place the JLC order (Phase 1 + Phase 2 combined)
 
@@ -108,17 +108,17 @@ calibrate, mechanical assembly.
       `flash_nuke(1).uf2` onto the RPI-RP2 drive to clear.
 - [ ] Then drag `adafruit-circuitpython-waveshare_rp2040_zero-en_US-9.1.0.uf2`
       onto the drive. It reboots as CIRCUITPY.
-- [ ] Copy to CIRCUITPY: `kmk_firmware-main/kmk/`, `analogio.py`,
-      `callibration.py`, `quickpin/`, and either `LEFT KB AND CODE/kb.py`
+- [ ] Copy to CIRCUITPY: `kmk_firmware-main/kmk/`, `firmware/analogio.py`,
+      `firmware/callibration.py`, and either `firmware/left/kb.py`
       + `code.py` (renamed to `code.py`) or the RIGHT equivalents.
 - [ ] Confirm the half boots and the serial REPL is reachable.
 
 ### 6. Calibrate (Phase 6, ~1 hour)
 
-- [ ] Copy `calibrate.py` to each half's CIRCUITPY and run it.
+- [ ] Copy `firmware/calibrate.py` to each half's CIRCUITPY and run it.
 - [ ] Leave keys at rest for a few seconds (captures the per-channel MAX).
 - [ ] Slowly press and fully release every key one at a time (captures MIN).
-- [ ] Copy the printed `input_range` block into `callibration.py`:
+- [ ] Copy the printed `input_range` block into `firmware/callibration.py`:
       LEFT half -> indices 0-31, RIGHT half -> indices 32-63.
 - [ ] Ignore the 3 unused mux channels (they read floating garbage) - leave
       those as `[14000, 1200]`.
@@ -145,10 +145,10 @@ calibrate, mechanical assembly.
 | `PCBs/bom_net_trace.csv` | Provenance: which two nets each R/C bridges. |
 | `PCBs/inventory_full.csv` | Full per-part classification (populated/DNP/manual). |
 | `PCBs/{left,right,plate}.zip` | Gerbers for bare boards. |
-| `LEFT KB AND CODE/`, `RIGHT KB AND CODE/` | Firmware halves (already cleaned). |
-| `analogio.py` | KMK AnalogScanner (reads mux). |
-| `callibration.py` | Per-key ADC min/max - you fill this from calibrate.py. |
-| `calibrate.py` | The helper that prints min/max values to paste in. |
+| `firmware/left/`, `firmware/right/` | Firmware halves (already cleaned, RGB removed). |
+| `firmware/analogio.py` | KMK AnalogScanner (reads mux). |
+| `firmware/callibration.py` | Per-key ADC min/max - you fill this from calibrate.py. |
+| `firmware/calibrate.py` | The helper that prints min/max values to paste in. |
 | `Case/*.stl` | Case STLs for 3D printing. |
 
 ## If something does not work

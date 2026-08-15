@@ -19,11 +19,13 @@ preserved unchanged.
   per-part classification (populated / DNP / hand-solder).
 - `PCBs/assembly_README.md` -- how to place the JLC order, including the
   rotation-verification caveat.
-- `calibrate.py` -- raw-ADC per-key calibration helper (prints a
-  paste-ready `input_range` block for `callibration.py`).
+- `firmware/calibrate.py` -- raw-ADC per-key calibration helper (prints a
+  paste-ready `input_range` block for `firmware/callibration.py`).
 - Firmware edits: RGB extensions removed from both `code.py`, pinout
-  import fixed (`YD_RP2040` -> `waveshareRP2040zero`) in both `kb.py`,
-  `neopixel.py` deleted.
+  import fixed (`YD_RP2040` -> `waveshareRP2040zero`) in both `kb.py`.
+- Restructured: firmware lives under `firmware/{left,right}/`; unused
+  content removed (`boot.py`, OLED variants, `neopixel.py`, duplicate
+  `quickpin/`, old test scripts, superseded `*OLD.py` files).
 
 Key correctness note: the KiCad `Value=HX6659ISO-B` field on every Hall
 sensor is a mislabel. The PCB pad assignment (1=VCC, 2=OUT, 3=GND)

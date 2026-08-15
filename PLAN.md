@@ -228,25 +228,25 @@ Only through-hole and parts JLCPCB can't place:
 
 - [ ] Copy KMK firmware to CIRCUITPY drive
   - `kmk_firmware-main/kmk/` directory
-  - `analogio.py` (custom AnalogScanner) -- copy this to
+  - `firmware/analogio.py` (custom AnalogScanner) -- copy this to
     `kmk/scanners/analogio.py` on CIRCUITPY, NOT the drive root
     (would shadow the built-in `analogio` module)
-  - `callibration.py` (calibration values)
-  - `quickpin/` directory
-  - **Do NOT copy `boot.py`** -- it configures `board.GP7` as a digital
-    input with pull-up, conflicting with left-half mux control
-    (`MulControl4`). The file is live code, not commented out.
+  - `firmware/callibration.py` (calibration values)
+  - The upstream `boot.py` has been deleted from this fork. It configured
+    `board.GP7` as a digital input with pull-up, conflicting with
+    left-half mux control (`MulControl4`). Never restore it.
 
 - [x] Clean up firmware for no-LED build  (DONE + verified, py_compile OK)
   - Removed both `RGB` extension blocks (imports + `under_rgb`/`rgb`
     objects + the two `keyboard.extensions.append` calls) from both
     `LEFT` and `RIGHT` `code.py`.
-  - Deleted `neopixel.py` from the repo root (only the RGB extension's
-    lazy `import neopixel` used it; no longer triggered).
-  - Fixed pinout import in BOTH `LEFT` and `RIGHT` `kb.py`:
-    `YD_RP2040` -> `waveshareRP2040zero`. Verified that every pin index
-    kb.py uses (read `pins[27]`=GP27; mux ctrl; tx/rx) maps to the SAME
-    physical GPx in both quickpin files -- the swap is safe.
+  - Deleted `neopixel.py` (only the RGB extension's lazy
+    `import neopixel` used it; no longer triggered).
+  - Fixed pinout import in both `firmware/left/kb.py` and
+    `firmware/right/kb.py`: `YD_RP2040` -> `waveshareRP2040zero`.
+    Verified that every pin index kb.py uses (read `pins[27]`=GP27; mux
+    ctrl; tx/rx) maps to the SAME physical GPx in both quickpin files
+    -- the swap is safe.
   - One-time fix only: the firmware is still author's 64-key `[14000,1200]`
     placeholders and 2-layer keymap with `XXXXXXX`; calibrate (Phase 6) and
     customise the keymap before final use.
@@ -259,7 +259,7 @@ Only through-hole and parts JLCPCB can't place:
 ### Phase 6: Calibration and Testing
 
 - [ ] Per-key calibration
-  - `callibration.py` currently has placeholder values
+  - `firmware/callibration.py` currently has placeholder values
     `[14000, 1200]` for all 64 keys (32 per side)
   - Need to read raw ADC values for each key at rest and fully pressed
   - Update the `input_range` list with actual min/max per key
@@ -270,7 +270,7 @@ Only through-hole and parts JLCPCB can't place:
   - `kb.py` has `actuation` with all values set to `1` (threshold mode)
   - Adjust per key for desired actuation point
   - Positive values = threshold mode, negative = rapid trigger mode
-  - Rapid trigger code is present but commented out in `analogio.py`
+  - Rapid trigger code is present but commented out in `firmware/analogio.py`
 
 ### Phase 7: Assembly
 
@@ -422,8 +422,8 @@ After uploading Gerbers + BOM + CPL to JLC and paying:
 
 Add on your side after delivery:
 - Hand-solder RP2040 Zero + USB-C: ~1-2 hours.
-- Flash CircuitPython + copy firmware + run `calibrate.py` + paste into
-  `callibration.py`: ~1 hour.
+- Flash CircuitPython + copy firmware + run `firmware/calibrate.py` +
+  paste into `firmware/callibration.py`: ~1 hour.
 - 3D-print case (or send out): days to a week depending on service.
 - Switch/keycap install + mechanical assembly: ~2 hours.
 
@@ -462,26 +462,26 @@ Key files:
 - `PCBs/cpl_lhs.csv`, `PCBs/cpl_rhs.csv` -- JLCPCB CPL (positions, Layer=B).
 - `PCBs/assembly_README.md` -- How to use the above for the JLC order, plus
   the rotation-verification caveat (the one step that needs the JLC uploader).
-- `calibrate.py` -- Standalone raw-ADC calibration helper (A6). Copy onto a
-  half's CIRCUITPY, run, press keys, paste the printed `input_range` block
-  into `callibration.py` (left -> indices 0-31, right -> 32-63).
+- `firmware/calibrate.py` -- Standalone raw-ADC calibration helper (A6).
+  Copy onto a half's CIRCUITPY, run, press keys, paste the printed
+  `input_range` block into `firmware/callibration.py`
+  (left -> indices 0-31, right -> 32-63).
 - `Case/Lucca58HE Case Left.stl` -- Left case
 - `Case/Lucca58HE Case Right.stl` -- Right case
-- `LEFT KB AND CODE/kb.py` -- Left keyboard definition (pinout, matrix)
-- `LEFT KB AND CODE/code.py` -- Left keymap + extensions (includes LED)
-- `LEFT KB AND CODE/OLED/code.py` -- Left OLED variant (incomplete)
-- `RIGHT KB AND CODE/kb.py` -- Right keyboard definition
-- `RIGHT KB AND CODE/code.py` -- Right keymap + extensions
-- `analogio.py` -- Custom AnalogScanner for KMK (reads mux + sensors).
-  Must be copied to `kmk/scanners/analogio.py` on CIRCUITPY, not the
-  drive root (would shadow the built-in `analogio` module).
-- `callibration.py` -- Per-key ADC min/max calibration values
-- `neopixel.py` -- NeoPixel driver (not needed for no-LED build)
+- `firmware/left/kb.py` -- Left keyboard definition (pinout, matrix)
+- `firmware/left/code.py` -- Left keymap + extensions (RGB removed)
+- `firmware/right/kb.py` -- Right keyboard definition
+- `firmware/right/code.py` -- Right keymap + extensions (RGB removed)
+- `firmware/analogio.py` -- Custom AnalogScanner for KMK (reads mux +
+  sensors). Must be copied to `kmk/scanners/analogio.py` on CIRCUITPY,
+  not the drive root (would shadow the built-in `analogio` module).
+- `firmware/callibration.py` -- Per-key ADC min/max calibration values
 - `flash_nuke(1).uf2` -- RP2040 flash eraser
 - `adafruit-circuitpython-waveshare_rp2040_zero-en_US-9.1.0.uf2` --
   CircuitPython firmware
-- `kmk_firmware-main/` -- Bundled KMK firmware
-- `quickpin/` -- Pin mappings for various MCU boards
+- `kmk_firmware-main/` -- Bundled KMK firmware (its
+  `kmk/quickpin/RP2040/waveshareRP2040zero.py` provides the pinout; the
+  old repo-root `quickpin/` duplicate was removed)
 
 ---
 
@@ -513,7 +513,7 @@ Key files:
 
 6. **Inter-half cable** -- RESOLVED (firmware-default path). The shipped
    firmware uses `SplitType.UART` with `use_pio=True` on pins 12/13
-   (`self.tx`/`self.rx`) on both halves (`LEFT/RIGHT KB AND CODE/kb.py`).
+   (`self.tx`/`self.rx`) on both halves (`firmware/{left,right}/kb.py`).
    **Follow the UART path for the initial build**: UART carries over the
    inter-half USB-C cable. The SPI lines (MOSI/MISO/SCK/CS) and their 0R
    series resistors / solder jumpers are for an optional SPI-ribbon mode
