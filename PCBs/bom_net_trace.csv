@@ -1,0 +1,188 @@
+side,ref,value,role,pads
+L,C1,100nF,VCC/GND decoupling,1=VCC;2=GND
+L,C101,100nF,sensor LPF cap A10,1=A10;2=GND
+L,C102,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C11,100nF,sensor LPF cap A1,1=A1;2=GND
+L,C111,100nF,sensor LPF cap A11,1=A11;2=GND
+L,C112,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C12,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C121,100nF,sensor LPF cap A12,1=A12;2=GND
+L,C122,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C131,100nF,sensor LPF cap A13,1=A13;2=GND
+L,C132,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C141,100nF,sensor LPF cap A14,1=A14;2=GND
+L,C142,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C151,100nF,sensor LPF cap A15,1=A15;2=GND
+L,C152,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C161,100nF,sensor LPF cap A16,1=A16;2=GND
+L,C162,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C171,100nF,sensor LPF cap A17,1=A17;2=GND
+L,C172,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C181,100nF,sensor LPF cap A18,1=A18;2=GND
+L,C182,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C191,100nF,sensor LPF cap A19,1=A19;2=GND
+L,C192,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C2,100nF,VCC/GND decoupling,1=VCC;2=GND
+L,C201,100nF,sensor LPF cap A20,1=A20;2=GND
+L,C202,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C21,100nF,sensor LPF cap A2,1=A2;2=GND
+L,C211,100nF,sensor LPF cap A21,1=A21;2=GND
+L,C212,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C22,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C221,100nF,sensor LPF cap A22,1=A22;2=GND
+L,C222,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C231,100nF,sensor LPF cap A23,1=A23;2=GND
+L,C232,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C241,100nF,sensor LPF cap A24,1=A24;2=GND
+L,C242,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C251,100nF,sensor LPF cap A25,1=A25;2=GND
+L,C252,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C261,100nF,sensor LPF cap A26,1=A26;2=GND
+L,C262,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C271,100nF,sensor LPF cap A27,1=A27;2=GND
+L,C272,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C281,100nF,sensor LPF cap A28,1=A28;2=GND
+L,C282,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C291,100nF,sensor LPF cap A29,1=A29;2=GND
+L,C292,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C31,100nF,sensor LPF cap A3,1=A3;2=GND
+L,C32,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C41,100nF,sensor LPF cap A4,1=A4;2=GND
+L,C42,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C51,100nF,sensor LPF cap A5,1=A5;2=GND
+L,C52,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C61,100nF,sensor LPF cap A6,1=A6;2=GND
+L,C62,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C71,100nF,sensor LPF cap A7,1=A7;2=GND
+L,C72,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C81,100nF,sensor LPF cap A8,1=A8;2=GND
+L,C82,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,C91,100nF,sensor LPF cap A9,1=A9;2=GND
+L,C92,100nF,VCC/GND decoupling,1=GND;2=VCC
+L,R1,1.5k,sensor LPF,1=Q1;2=A1
+L,R10,1.5k,sensor LPF,1=Q10;2=A10
+L,R11,1.5k,sensor LPF,1=Q11;2=A11
+L,R12,1.5k,sensor LPF,1=Q12;2=A12
+L,R13,1.5k,sensor LPF,1=Q13;2=A13
+L,R14,1.5k,sensor LPF,1=Q14;2=A14
+L,R15,1.5k,sensor LPF,1=Q15;2=A15
+L,R16,1.5k,sensor LPF,1=Q16;2=A16
+L,R17,1.5k,sensor LPF,1=Q17;2=A17
+L,R18,1.5k,sensor LPF,1=Q18;2=A18
+L,R19,1.5k,sensor LPF,1=Q19;2=A19
+L,R2,1.5k,sensor LPF,1=Q2;2=A2
+L,R20,1.5k,sensor LPF,1=Q20;2=A20
+L,R21,1.5k,sensor LPF,1=Q21;2=A21
+L,R22,1.5k,sensor LPF,1=Q22;2=A22
+L,R23,1.5k,sensor LPF,1=Q23;2=A23
+L,R24,1.5k,sensor LPF,1=Q24;2=A24
+L,R25,1.5k,sensor LPF,1=Q25;2=A25
+L,R26,1.5k,sensor LPF,1=Q26;2=A26
+L,R27,1.5k,sensor LPF,1=Q27;2=A27
+L,R28,1.5k,sensor LPF,1=Q28;2=A28
+L,R29,1.5k,sensor LPF,1=Q29;2=A29
+L,R3,1.5k,sensor LPF,1=Q3;2=A3
+L,R30,4.7k,CS pull-up (DNP no-peripheral),1=VCC;2=CS
+L,R31,0R,SPI series jumper MOSI(L),1=MOSI(L);2=MOSI(L)
+L,R32,4.7k,I2C pull-up SDA,1=VCC;2=SDA
+L,R33,4.7k,I2C pull-up SCL,1=VCC;2=SCL
+L,R34,0R,SPI series jumper SCK,1=SCK;2=SCK
+L,R35,0R,SPI series jumper CS,1=CS;2=CS
+L,R4,1.5k,sensor LPF,1=Q4;2=A4
+L,R5,1.5k,sensor LPF,1=Q5;2=A5
+L,R6,1.5k,sensor LPF,1=Q6;2=A6
+L,R7,1.5k,sensor LPF,1=Q7;2=A7
+L,R8,1.5k,sensor LPF,1=Q8;2=A8
+L,R9,1.5k,sensor LPF,1=Q9;2=A9
+R,C1,100nF,VCC/GND decoupling,1=VCC;2=GND
+R,C101,100nF,sensor LPF cap A10,1=A10;2=GND
+R,C102,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C11,100nF,sensor LPF cap A1,1=A1;2=GND
+R,C111,100nF,sensor LPF cap A11,1=A11;2=GND
+R,C112,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C12,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C121,100nF,sensor LPF cap A12,1=A12;2=GND
+R,C122,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C131,100nF,sensor LPF cap A13,1=A13;2=GND
+R,C132,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C141,100nF,sensor LPF cap A14,1=A14;2=GND
+R,C142,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C151,100nF,sensor LPF cap A15,1=A15;2=GND
+R,C152,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C161,100nF,sensor LPF cap A16,1=A16;2=GND
+R,C162,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C171,100nF,sensor LPF cap A17,1=A17;2=GND
+R,C172,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C181,100nF,sensor LPF cap A18,1=A18;2=GND
+R,C182,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C191,100nF,sensor LPF cap A19,1=A19;2=GND
+R,C192,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C2,100nF,VCC/GND decoupling,1=VCC;2=GND
+R,C201,100nF,sensor LPF cap A20,1=A20;2=GND
+R,C202,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C21,100nF,sensor LPF cap A2,1=A2;2=GND
+R,C211,100nF,sensor LPF cap A21,1=A21;2=GND
+R,C212,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C22,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C221,100nF,sensor LPF cap A22,1=A22;2=GND
+R,C222,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C231,100nF,sensor LPF cap A23,1=A23;2=GND
+R,C232,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C241,100nF,sensor LPF cap A24,1=A24;2=GND
+R,C242,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C251,100nF,sensor LPF cap A25,1=A25;2=GND
+R,C252,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C261,100nF,sensor LPF cap A26,1=A26;2=GND
+R,C262,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C271,100nF,sensor LPF cap A27,1=A27;2=GND
+R,C272,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C281,100nF,sensor LPF cap A28,1=A28;2=GND
+R,C282,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C291,100nF,sensor LPF cap A29,1=A29;2=GND
+R,C292,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C31,100nF,sensor LPF cap A3,1=A3;2=GND
+R,C32,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C41,100nF,sensor LPF cap A4,1=A4;2=GND
+R,C42,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C51,100nF,sensor LPF cap A5,1=A5;2=GND
+R,C52,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C61,100nF,sensor LPF cap A6,1=A6;2=GND
+R,C62,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C71,100nF,sensor LPF cap A7,1=A7;2=GND
+R,C72,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C81,100nF,sensor LPF cap A8,1=A8;2=GND
+R,C82,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,C91,100nF,sensor LPF cap A9,1=A9;2=GND
+R,C92,100nF,VCC/GND decoupling,1=GND;2=VCC
+R,R1,1.5k,sensor LPF,1=Q1;2=A1
+R,R10,1.5k,sensor LPF,1=Q10;2=A10
+R,R11,1.5k,sensor LPF,1=Q11;2=A11
+R,R12,1.5k,sensor LPF,1=Q12;2=A12
+R,R13,1.5k,sensor LPF,1=Q13;2=A13
+R,R14,1.5k,sensor LPF,1=Q14;2=A14
+R,R15,1.5k,sensor LPF,1=Q15;2=A15
+R,R16,1.5k,sensor LPF,1=Q16;2=A16
+R,R17,1.5k,sensor LPF,1=Q17;2=A17
+R,R18,1.5k,sensor LPF,1=Q18;2=A18
+R,R19,1.5k,sensor LPF,1=Q19;2=A19
+R,R2,1.5k,sensor LPF,1=Q2;2=A2
+R,R20,1.5k,sensor LPF,1=Q20;2=A20
+R,R21,1.5k,sensor LPF,1=Q21;2=A21
+R,R22,1.5k,sensor LPF,1=Q22;2=A22
+R,R23,1.5k,sensor LPF,1=Q23;2=A23
+R,R24,1.5k,sensor LPF,1=Q24;2=A24
+R,R25,1.5k,sensor LPF,1=Q25;2=A25
+R,R26,1.5k,sensor LPF,1=Q26;2=A26
+R,R27,1.5k,sensor LPF,1=Q27;2=A27
+R,R28,1.5k,sensor LPF,1=Q28;2=A28
+R,R29,1.5k,sensor LPF,1=Q29;2=A29
+R,R3,1.5k,sensor LPF,1=Q3;2=A3
+R,R30,0R,SPI series jumper MISO(L),1=MISO(L);2=MISO(L)
+R,R31,4.7k,I2C pull-up SCL,1=SCL;2=VCC
+R,R32,4.7k,I2C pull-up SDA,1=SDA;2=VCC
+R,R4,1.5k,sensor LPF,1=Q4;2=A4
+R,R5,1.5k,sensor LPF,1=Q5;2=A5
+R,R6,1.5k,sensor LPF,1=Q6;2=A6
+R,R7,1.5k,sensor LPF,1=Q7;2=A7
+R,R8,1.5k,sensor LPF,1=Q8;2=A8
+R,R9,1.5k,sensor LPF,1=Q9;2=A9

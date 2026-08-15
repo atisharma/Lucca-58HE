@@ -1,0 +1,334 @@
+side,ref,value,footprint,lcsc,role,pop
+L,C1,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C101,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C102,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C11,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C111,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C112,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C12,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C121,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C122,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C131,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C132,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C141,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C142,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C151,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C152,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C161,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C162,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C171,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C172,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C181,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C182,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C191,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C192,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C2,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C201,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C202,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C21,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C211,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C212,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C22,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C221,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C222,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C231,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C232,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C241,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C242,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C251,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C252,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C261,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C262,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C271,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C272,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C281,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C282,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C291,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C292,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C31,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C32,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C41,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C42,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C51,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C52,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C61,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C62,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C71,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C72,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C81,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C82,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,C91,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+L,C92,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+L,G***,LOGO,tinyfirelucca,,silkscreen,skip
+L,H1,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H10,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H11,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H12,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H13,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H14,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H15,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H16,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H17,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H18,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H19,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H2,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H20,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H21,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H22,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H23,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H24,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H25,DRV5053VAQDBZR,1.5U Key,C962159,HE sensor,populated
+L,H26,DRV5053VAQDBZR,1.5U Key,C962159,HE sensor,populated
+L,H27,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H28,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H29,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H3,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H4,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H5,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H6,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H7,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H8,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,H9,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+L,LED1,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED10,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED11,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED12,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED13,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED14,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED15,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED16,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED17,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED18,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED19,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED2,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED20,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED21,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED22,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED23,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED24,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED25,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED26,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED27,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED28,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED29,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED3,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED4,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED5,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED6,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED7,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED8,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,LED9,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+L,OLED,OLED-header,OLEDPinHeader_1x04_P2.54mm_Vertical,,pin header TH (no-OLED->DNP),DNP
+L,R1,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R10,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R11,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R12,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R13,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R14,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R15,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R16,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R17,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R18,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R19,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R2,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R20,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R21,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R22,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R23,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R24,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R25,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R26,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R27,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R28,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R29,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R3,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R30,4.7k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,CS pull-up (DNP),DNP
+L,R31,0R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,SPI-series (UART->DNP),DNP
+L,R32,4.7k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,I2C pull-up (no-OLED->DNP),DNP
+L,R33,4.7k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,I2C pull-up (no-OLED->DNP),DNP
+L,R34,0R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,SPI-series (UART->DNP),DNP
+L,R35,0R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,SPI-series (UART->DNP),DNP
+L,R4,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R5,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R6,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R7,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R8,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,R9,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+L,REF**,M2.5,MountingHole_2.7mm_M2.5_DIN965_Pad,,mounting hole,skip
+L,RP2040-Zero,RP2040-Zero,RP2040-Zero Through Hole foot print (Correct version),,MCU module TH,manual
+L,U1,ADG732BSUZ,SU_48_ADI-M,C579103,mux,populated
+L,UG1,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP
+L,UG10,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP
+L,UG2,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP
+L,UG3,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP
+L,UG4,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP
+L,UG5,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP
+L,UG6,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP
+L,UG7,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP
+L,UG8,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP
+L,UG9,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP
+R,C1,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C101,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C102,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C11,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C111,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C112,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C12,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C121,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C122,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C131,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C132,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C141,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C142,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C151,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C152,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C161,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C162,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C171,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C172,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C181,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C182,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C191,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C192,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C2,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C201,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C202,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C21,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C211,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C212,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C22,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C221,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C222,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C231,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C232,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C241,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C242,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C251,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C252,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C261,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C262,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C271,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C272,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C281,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C282,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C291,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C292,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C31,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C32,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C41,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C42,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C51,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C52,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C61,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C62,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C71,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C72,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C81,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C82,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,C91,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,sensor LPF cap,populated
+R,C92,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1711,decoupling,populated
+R,G***,LOGO,tinyfirelucca,,silkscreen,skip
+R,H1,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H10,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H11,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H12,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H13,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H14,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H15,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H16,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H17,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H18,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H19,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H2,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H20,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H21,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H22,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H23,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H24,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H25,DRV5053VAQDBZR,1.5U Key,C962159,HE sensor,populated
+R,H26,DRV5053VAQDBZR,1.5U Key,C962159,HE sensor,populated
+R,H27,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H28,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H29,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H3,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H4,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H5,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H6,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H7,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H8,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,H9,DRV5053VAQDBZR,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,C962159,HE sensor,populated
+R,LED1,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED10,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED11,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED12,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED13,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED14,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED15,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED16,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED17,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED18,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED19,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED2,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED20,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED21,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED22,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED23,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED24,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED25,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED26,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED27,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED28,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED29,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED3,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED4,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED5,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED6,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED7,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED8,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,LED9,SK6812MINI-E,LED-SMD_L3.2-W2.8-TR,,LED (no-LED->DNP),DNP
+R,OLED,OLED-header,OLEDPinHeader_1x04_P2.54mm_Vertical,,pin header TH (no-OLED->DNP),DNP
+R,R1,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R10,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R11,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R12,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R13,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R14,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R15,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R16,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R17,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R18,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R19,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R2,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R20,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R21,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R22,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R23,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R24,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R25,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R26,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R27,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R28,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R29,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R3,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R30,0R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,SPI-series (UART->DNP),DNP
+R,R31,4.7k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,I2C pull-up (no-OLED->DNP),DNP
+R,R32,4.7k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,I2C pull-up (no-OLED->DNP),DNP
+R,R4,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R5,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R6,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R7,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R8,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,R9,1.5k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C4310,sensor LPF,populated
+R,REF**,M2.5,MountingHole_2.7mm_M2.5_DIN965_Pad,,mounting hole,skip
+R,RP2040-Zero,RP2040-Zero,RP2040-Zero Through Hole foot print (Correct version),,MCU module TH,manual
+R,U1,ADG732BSUZ,SU_48_ADI-M,C579103,mux,populated
+R,UG1,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP
+R,UG10,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP
+R,UG2,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP
+R,UG3,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP
+R,UG4,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP
+R,UG5,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP
+R,UG6,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP
+R,UG7,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP
+R,UG8,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP
+R,UG9,SK6812MINI-E,NONFlippedUnderGlowLED,,LED (no-LED->DNP),DNP

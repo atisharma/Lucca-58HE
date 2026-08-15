@@ -1,0 +1,4 @@
+tags
+.ruff_cache/
+*.kicad_prl
+__pycache__/
