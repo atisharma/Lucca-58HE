@@ -26,11 +26,15 @@ C5350143) as THT BOM lines on 2026-08-15; JLC flagged both as assembly
 shortage (LCSC stock 0 for C5119949) and demanded substitution, so they
 were removed. Hand-solder both per ../SOLDERING.md.
 
-2026-08-15 follow-up: `bom_*_with_usbc.csv` / `cpl_*_with_usbc.csv` are
-companion pairs with ONLY J1 re-added (top layer). Use these instead of
-the plain pair IF you want JLC's Parts Sourcing service to procure the
-Molex from a distributor rather than hand-soldering it. The plain
-bom/cpl pair remains the default (hand-solder the connector).
+2026-08-15 follow-up: `bom_*_with_tht.csv` / `cpl_*_with_tht.csv` are
+companion pairs with J1 (USB-C) AND U2 (RP2040 Zero) re-added as
+top-layer rows. Use these -- with double-sided (bottom SMT + top THT)
+placement selected -- IF you prefer to wait for both parts to return to
+LCSC stock and have JLC place everything. As of 2026-08-15 both are
+LCSC stock 0, so this pair blocks ordering until restock; the plain
+bom/cpl pair plus hand-soldering (SOLDERING.md) is the orderable-now
+path. Click the "notify me"/stock alert on the LCSC part pages
+(C5119949, C5350143) to catch the restock.
 
 ## What is NOT assembled -- hand-solder or leave open
 

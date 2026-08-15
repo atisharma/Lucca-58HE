@@ -102,11 +102,12 @@ calibrate, mechanical assembly.
 
 ### 3. Source hand-solder parts (parallel with the order)
 
-- [ ] 2x Waveshare RP2040 Zero (LCSC C5350143, ~$3.90 each). (Tried JLC
-      THT placement 2026-08-15; JLC reports assembly shortage, so
-      hand-solder per SOLDERING.md.)
-- [ ] 2x Molex USB-C 2137160001 (JLC C5119949, ~$1.55 each) - same,
-      hand-solder.
+- [ ] 2x Waveshare RP2040 Zero (LCSC C5350143, ~$3.90 each). LCSC stock
+      0 as of 2026-08-15 - either wait for restock (stock alert on the
+      LCSC page) and use the `*_with_tht` BOM/CPL pair for JLC
+      placement, or buy from Waveshare/other vendor and hand-solder.
+- [ ] 2x Molex USB-C 2137160001 (JLC C5119949, ~$1.55) - also LCSC stock
+      0; DigiKey/Mouser have it at ~$1.40. Same decision as above.
 - [ ] HE switches: Gateron Jades, ~58 + a few spares.
 - [ ] Keycaps (whatever layout you want).
 - [ ] M2.5 fasteners: 3mm brass standoffs, 12mm flat-top screws, 6x0.4mm
