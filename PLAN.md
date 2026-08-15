@@ -206,7 +206,8 @@ This is the main agent work. Goal: generate BOM and CPL files for JLCPCB PCBA.
 
 - [ ] Order PCBA from JLCPCB
   - Upload Gerbers, BOM, CPL
-  - Select "Economic" assembly (cheaper, limited parts)
+  - Select "Standard" PCBA (Economic tier does not accept 4-layer
+    boards), single-side, bottom
   - Parts not in JLCPCB catalogue (RP2040 Zero) will be left unpopulated
 
 ### Phase 3: Manual Soldering (after PCBA delivery)
@@ -328,8 +329,9 @@ spot-checks showed wrong values/packages.
 per side is: 29 sensors + 1 mux + 29x 1.5k (R1-R29) + 60x 100nF =
 119 parts.** The 4.7k pull-ups, 0R SPI-series, LEDs, underglow, OLED
 header, and solder jumpers are all DNP. The populated SMD is entirely
-on the BOTTOM layer, so JLC's single-side **Economic** assembly covers
-it -- no double-side fee. Through-hole (RP2040 Zero, USB-C) is
+on the BOTTOM layer, so JLC's single-side assembly covers
+it. (Economic PCBA is NOT available: it rejects 4-layer boards. Use
+Standard, bottom side only.) Through-hole (RP2040 Zero, USB-C) is
 hand-soldered. See `PCBs/assembly_README.md`.
 
 ### Hand-solder and optional parts
@@ -368,16 +370,20 @@ is authoritative** (part prices change with stock and tier).
 | 1.5k resistor, 29/side x2 = 58 | 58 x $0.0037 (C4310, 1+ tier) | $0.21 |
 | 100nF cap, 60/side x2 = 120 | 120 x $0.0262 (C1711, 1+ tier) | $3.14 |
 | **Parts subtotal (SMD, both sides)** | | **$31.67** |
-| Economic PCBA setup | $8 / order (one order, both halves) | $8.00 |
+| Standard PCBA setup | ~$25 / order (one order, both halves) | $25.00 |
 | Stencil | $1.50 | $1.50 |
 | Panel fee | $7.81 / panel | $7.81 |
 | SMT assembly joints | 284 joints/side x 2 x $0.0016 | $0.91 |
 | Hand-solder labour | $3.50 / order | $3.50 |
 | X-ray inspection (AD72 mux is TQFP-48, has visible leads -> NOT BGA/QFN) | likely $0 | $0.00 |
-| **JLC PCBA subtotal (excl. bare PCB)** | | **~$52.59** |
+| **JLC PCBA subtotal (excl. bare PCB)** | | **~$69.59** |
 
-All populated SMD is on the bottom layer, so Economic single-side
-is sufficient -- no double-side setup fee.
+NOTE: JLC's cheaper Economic PCBA tier does NOT accept 4-layer boards,
+and both halves are 4-layer -> Standard PCBA is the only option. All
+populated SMD is on the bottom layer, so single-side placement is still
+correct -- no double-side setup fee. Decline conformal coating (a
+Standard-tier option): pointless for a desk keyboard, adds cost, and
+makes the later hand-soldering and any rework harder.
 
 ### Bare PCBs (needed, fabricate+assemble in one JLC order)
 
@@ -437,7 +443,7 @@ After uploading Gerbers + BOM + CPL to JLC and paying:
 | Stage | Typical |
 |-------|---------|
 | Bare PCB fabrication | 2-5 business days (24h express available) |
-| Economic PCBA assembly | 3-5 business days after PCB fab |
+| Standard PCBA assembly | 3-5 business days after PCB fab |
 | JLC QC + ship prep | 1-2 days |
 | Carrier transit (DHL/FedEx to UK, DDP) | 3-7 days |
 | **Order placed -> boards in hand** | **~2-3 weeks** |

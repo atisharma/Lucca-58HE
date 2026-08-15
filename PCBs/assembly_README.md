@@ -33,12 +33,17 @@ Files in this directory for the **no-LED / no-OLED / UART** build:
   - RHS solder jumpers (3x) -- leave OPEN for UART.
   - OLED 4-pin pin header.
 
-## Single-side (Economic) assembly is sufficient
+## Single-side Standard assembly (Economic not available)
 
 All 119 populated SMD parts per side are on the **BOTTOM** layer (B.Cu). The only
 top-side parts are through-hole (RP2040 Zero, USB-C, OLED header) or DNP
-resistors. So JLC's single-side Economic tier can place everything -- no
-double-side assembly fee required. Select "Economic" and the **bottom** side
+resistors. So single-side placement covers everything -- no
+double-side assembly fee required. JLC's cheaper Economic PCBA tier is
+NOT available for this board (Economic rejects 4-layer boards; both
+halves are 4-layer), so select **Standard** PCBA and the **bottom** side
+only. Decline the optional conformal coating (Standard-tier add-on): it
+adds cost/lead time, does nothing for a desk keyboard, and interferes
+with the later hand-soldering and any rework.
 when uploading.
 
 ## CRITICAL -- rotation must be verified in JLC's upload preview

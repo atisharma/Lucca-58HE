@@ -43,8 +43,9 @@ calibrate, mechanical assembly.
    the plan is corrected.)
 4. **No I2C pull-ups populated** (LHS R32/R33, RHS R31/R32). No OLED -> no
    I2C traffic -> DNP them.
-5. **All populated SMD is on the BOTTOM layer.** Order single-side Economic
-   assembly, bottom side. No double-side fee needed.
+5. **All populated SMD is on the BOTTOM layer.** Order single-side
+   assembly, bottom side. No double-side fee needed. Economic PCBA is
+   NOT available (it rejects 4-layer boards) - use **Standard** tier.
 6. **Surface finish = ENIG** (order-page dropdown at JLC; NOT a Gerber
    property). Planar pads for the 0.5mm TQFP-48 mux, reliable castellated
    mounting for the RP2040 Zero, no lead, no corrosion. Avoid leaded HASL
@@ -77,7 +78,8 @@ calibrate, mechanical assembly.
 - [ ] On jlcpcb.com start a "PCB Assembly" order.
 - [ ] Upload Gerber zip for LEFT: `PCBs/left.zip`.
 - [ ] Upload `PCBs/bom_lhs.csv` and `PCBs/cpl_lhs.csv`.
-- [ ] Select **Economic** PCBA, **bottom** side for placement.
+- [ ] Select **Standard** PCBA (Economic rejects 4-layer boards),
+      **bottom** side for placement. Decline conformal coating.
 - [ ] **In the preview, walk through placements and verify rotations**
       (see critical fact #2). Fix and re-upload if wrong.
 - [ ] Repeat as a second order (or same order, second board) for RIGHT:
