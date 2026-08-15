@@ -12,33 +12,30 @@ Files in this directory for the **no-LED / no-OLED / UART** build:
 
 ## What is assembled by JLC
 
-| LCSC | Part | Qty | Role | Mount |
-|------|------|-----|------|-------|
-| C962159 | DRV5053VAQDBZR Hall sensor (SOT-23 DBZ) | 29 | H1-H29 | SMT, bottom |
-| C579103 | ADG732BSUZ 32:1 mux (TQFP-48) | 1 | U1 | SMT, bottom |
-| C4310 | 1.5k 0805 1% resistor | 29 | R1-R29 (sensor LPF) | SMT, bottom |
-| C1711 | 100nF 0805 X7R 50V cap | 60 | C1-C60 (29 LPF + 31 decoupling) | SMT, bottom |
-| C5119949 | Molex 2137160001 USB-C | 1 | J1 | **THT, top** |
-| C5350143 | Waveshare RP2040 Zero | 1 | U2 | **THT, top** |
+| LCSC | Part | Qty | Role |
+|------|------|-----|------|
+| C962159 | DRV5053VAQDBZR Hall sensor (SOT-23 DBZ) | 29 | H1-H29 |
+| C579103 | ADG732BSUZ 32:1 mux (TQFP-48) | 1 | U1 |
+| C4310 | 1.5k 0805 1% resistor | 29 | R1-R29 (sensor LPF) |
+| C1711 | 100nF 0805 X7R 50V cap | 60 | C1-C60 (29 LPF + 31 decoupling) |
 
-**119 SMT parts per side on the bottom; 2 THT parts per side on top =
-121 BOM lines per side.** The THT rows exist because hand-soldering the
-USB-C signal pins is the main patient-zero for bridges; if JLC's THT
-fees look unreasonable in the quote, delete the J1/U2 rows from BOM +
-CPL (and re-verify the preview) — hand-solder instructions are in
-`SOLDERING.md`.
+**119 populated SMD parts per side, 238 total.**
 
-Note: J1's reference is genuinely `REF**` in the upstream PCB (author
-never set it) and U2's is `RP2040-Zero`; the BOM/CPL use clean
-designators J1/U2. JLC assembles from CPL coordinates, so this is fine —
-just don't be confused when scouring the silkscreen.
+We tried adding J1 (Molex USB-C, C5119949) and U2 (RP2040 Zero,
+C5350143) as THT BOM lines on 2026-08-15; JLC flagged both as assembly
+shortage (LCSC stock 0 for C5119949) and demanded substitution, so they
+were removed. Hand-solder both per ../SOLDERING.md.
 
-## What is NOT assembled -- leave open (DNP)
+2026-08-15 follow-up: `bom_*_with_usbc.csv` / `cpl_*_with_usbc.csv` are
+companion pairs with ONLY J1 re-added (top layer). Use these instead of
+the plain pair IF you want JLC's Parts Sourcing service to procure the
+Molex from a distributor rather than hand-soldering it. The plain
+bom/cpl pair remains the default (hand-solder the connector).
 
-- **Through-hole:** nothing left to hand-solder if J1/U2 are JLC-placed
-  (see above). If you DNP them again: 1x Waveshare RP2040 Zero, 1x Molex
-  2137160001 USB-C, per SOLDERING.md. (OLED 4-pin header is no-OLED ->
-  do not fit.)
+## What is NOT assembled -- hand-solder or leave open
+
+- **Through-hole (hand-solder):** 1x Waveshare RP2040 Zero, 1x Molex 2137160001
+  USB-C. (OLED 4-pin header is no-OLED -> do not fit.)
 - **DNP -- do not populate:**
   - 39x SK6812MINI-E LEDs per side (29 per-key + 10 underglow) -- no-LED build.
   - I2C pull-ups: LHS R32/R33, RHS R31/R32 (4.7k) -- no OLED, no I2C traffic.
