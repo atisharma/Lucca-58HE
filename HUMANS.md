@@ -49,6 +49,9 @@ calibrate, mechanical assembly.
    property). Planar pads for the 0.5mm TQFP-48 mux, reliable castellated
    mounting for the RP2040 Zero, no lead, no corrosion. Avoid leaded HASL
    and OSP (bad for the later hand-soldering). Single-digit-$ premium.
+   **Solder mask: white** on all three boards (left, right, plate) --
+   chosen for looks, cost-neutral. Everything else: factory defaults
+   (1oz/0.5oz copper, TG150, standard vias, flying-probe test on).
 
 ## Returning checklist
 

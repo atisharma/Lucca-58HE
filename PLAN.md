@@ -175,6 +175,12 @@ LHS uses a 0 Ohm resistor instead.
     that gets touched for years. Single-digit-dollar premium at
     prototype qty. Avoid: leaded HASL (lead + domed pads), LF-HASL
     (domed pads), OSP (film burns off under the later hand-solder work).
+  - **Solder mask: white** (choose for all three boards incl. plate --
+    cost-neutral at JLC). White mask + black silkscreen + gold ENIG pads.
+  - Everything else: factory defaults (1oz outer / 0.5oz inner copper,
+    TG150, standard holes/vias, flying-probe test ticked). No high-spec
+    options are justified -- see docs discussion; the board is
+    logic-level, no impedance/VIPPO/heavy-copper need.
 
 ### Phase 2: Assembly Service Preparation
 
