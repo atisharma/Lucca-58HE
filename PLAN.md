@@ -210,9 +210,10 @@ This is the main agent work. Goal: generate BOM and CPL files for JLCPCB PCBA.
     boards), single-side, bottom
   - Parts not in JLCPCB catalogue (RP2040 Zero) will be left unpopulated
 
-### Phase 3: Manual Soldering (after PCBA delivery)
+### Phase 3: Manual Soldering (only if J1/U2 removed from BOM)
 
-Only through-hole and parts JLCPCB can't place:
+The BOM/CPL now include J1 (Molex USB-C) and U2 (RP2040 Zero) as THT
+rows for JLC placement. If you keep them, Phase 3 is empty. Fallback:
 
 - [ ] Solder 2x Waveshare RP2040 Zero modules (through-hole, easy)
 - [ ] Solder 2x USB-C connectors (through-hole, manageable)

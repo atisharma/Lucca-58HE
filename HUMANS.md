@@ -102,16 +102,23 @@ calibrate, mechanical assembly.
 
 ### 3. Source hand-solder parts (parallel with the order)
 
-- [ ] 2x Waveshare RP2040 Zero (LCSC C5350143, ~$3.90 each) - or let JLC
-      place them by adding to the BOM (they offer castellated placement).
-- [ ] 2x Molex USB-C 2137160001 (JLC C5119949, ~$1.55 each).
+Optional now: the BOM/CPL include J1 (Molex 2137160001 USB-C, C5119949)
+and U2 (RP2040 Zero, C5350143) as THT lines for JLC placement. Only buy
+hand-solder any spare/rework stock if you want spares or if you commit
+those rows:
+
+- [ ] (optional spare) 2x Waveshare RP2040 Zero (LCSC C5350143, ~$3.90)
+- [ ] (optional spare) 2x Molex USB-C 2137160001 (JLC C5119949, ~$1.55)
 - [ ] HE switches: Gateron Jades, ~58 + a few spares.
 - [ ] Keycaps (whatever layout you want).
 - [ ] M2.5 fasteners: 3mm brass standoffs, 12mm flat-top screws, 6x0.4mm
       washers, 1.8mm nuts.
 - [ ] A USB-C data cable for the inter-half link (UART).
 
-### 4. Hand-solder through-hole (Phase 3, after delivery, ~1-2 hours)
+### 4. Hand-solder through-hole (Phase 3, after delivery)
+
+Only needed if you removed the J1/U2 THT rows from the BOM; otherwise JLC
+has already soldered the RP2040 Zero + USB-C. If doing it yourself:
 
 - [ ] Solder the 2x RP2040 Zero modules (one per board).
 - [ ] Solder the 2x USB-C connectors.

@@ -10,21 +10,35 @@ Files in this directory for the **no-LED / no-OLED / UART** build:
 | `inventory_full.csv` | Full per-footprint classification (populated / DNP / manual / skip) |
 | `left.zip`, `right.zip`, `plate.zip` | Gerbers (bare board + switch plate) |
 
-## What JLC assembles (per side, x2 sides)
+## What is assembled by JLC
 
-| LCSC | Part | Qty | Role |
-|------|------|-----|------|
-| C962159 | DRV5053VAQDBZR Hall sensor (SOT-23 DBZ) | 29 | H1-H29 |
-| C579103 | ADG732BSUZ 32:1 mux (TQFP-48) | 1 | U1 |
-| C4310 | 1.5k 0805 1% resistor | 29 | R1-R29 (sensor LPF) |
-| C1711 | 100nF 0805 X7R 50V cap | 60 | C1-C60 (29 LPF + 31 decoupling) |
+| LCSC | Part | Qty | Role | Mount |
+|------|------|-----|------|-------|
+| C962159 | DRV5053VAQDBZR Hall sensor (SOT-23 DBZ) | 29 | H1-H29 | SMT, bottom |
+| C579103 | ADG732BSUZ 32:1 mux (TQFP-48) | 1 | U1 | SMT, bottom |
+| C4310 | 1.5k 0805 1% resistor | 29 | R1-R29 (sensor LPF) | SMT, bottom |
+| C1711 | 100nF 0805 X7R 50V cap | 60 | C1-C60 (29 LPF + 31 decoupling) | SMT, bottom |
+| C5119949 | Molex 2137160001 USB-C | 1 | J1 | **THT, top** |
+| C5350143 | Waveshare RP2040 Zero | 1 | U2 | **THT, top** |
 
-**119 populated SMD parts per side, 238 total.**
+**119 SMT parts per side on the bottom; 2 THT parts per side on top =
+121 BOM lines per side.** The THT rows exist because hand-soldering the
+USB-C signal pins is the main patient-zero for bridges; if JLC's THT
+fees look unreasonable in the quote, delete the J1/U2 rows from BOM +
+CPL (and re-verify the preview) — hand-solder instructions are in
+`SOLDERING.md`.
 
-## What is NOT assembled -- hand-solder or leave open
+Note: J1's reference is genuinely `REF**` in the upstream PCB (author
+never set it) and U2's is `RP2040-Zero`; the BOM/CPL use clean
+designators J1/U2. JLC assembles from CPL coordinates, so this is fine —
+just don't be confused when scouring the silkscreen.
 
-- **Through-hole (hand-solder):** 1x Waveshare RP2040 Zero, 1x Molex 2137160001
-  USB-C. (OLED 4-pin header is no-OLED -> do not fit.)
+## What is NOT assembled -- leave open (DNP)
+
+- **Through-hole:** nothing left to hand-solder if J1/U2 are JLC-placed
+  (see above). If you DNP them again: 1x Waveshare RP2040 Zero, 1x Molex
+  2137160001 USB-C, per SOLDERING.md. (OLED 4-pin header is no-OLED ->
+  do not fit.)
 - **DNP -- do not populate:**
   - 39x SK6812MINI-E LEDs per side (29 per-key + 10 underglow) -- no-LED build.
   - I2C pull-ups: LHS R32/R33, RHS R31/R32 (4.7k) -- no OLED, no I2C traffic.
