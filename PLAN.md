@@ -363,27 +363,43 @@ is authoritative** (part prices change with stock and tier).
 
 ### JLC PCBA costs (both halves, single order)
 
+Live prices re-checked 2026-08-15 (LCSC): the June estimates in column 3
+were stale -- both expensive parts roughly tripled.
+
 | Item | How derived | Est. |
 |------|-------------|------|
-| DRV5053VAQDBZR sensors, 29/side x2 = 58 | 58 x $0.14 (C962159) | $8.12 |
-| ADG732BSUZ mux, 1/side x2 = 2 | 2 x $10.10 (C579103) | $20.20 |
-| 1.5k resistor, 29/side x2 = 58 | 58 x $0.0037 (C4310, 1+ tier) | $0.21 |
-| 100nF cap, 60/side x2 = 120 | 120 x $0.0262 (C1711, 1+ tier) | $3.14 |
-| **Parts subtotal (SMD, both sides)** | | **$31.67** |
+| DRV5053VAQDBZR sensors | $0.3905 ea (was est. $0.14). LCSC stock 230 | qty |
+| ADG732BSUZ mux | $28.71 ea (was est. $10.10!) | qty |
+| 1.5k resistor | $0.0026 ea (C4310) | qty |
+| 100nF cap | $0.0112 ea (C1711) | qty |
+| **Parts per assembled half** | 29x0.3905 + 28.71 + 29x0.0026 + 60x0.0112 | **$40.78** |
+
+**Assembly quantity: 2 per side (the JLC minimum, both tiers).** The
+$228 "Components (4 items)" line seen at upload time was the default
+qty=5 per side (5 x $40.78 + JLC margin). At qty 2 per side:
+components ~= 2 x ($40.78 + $40.78) = **~$163 both sides**, and it
+also keeps DRV5053 demand (58) under LCSC's 230 stock -- qty 5 would
+need 290 and fail stock.
+
+Extended-part note: DRV5053 and ADG732 are JLC "extended" (not basic)
+parts -- expect a per-part-type loading fee (~$3 each) on top of the
+part price per BOM line.
+
 | Standard PCBA setup | ~$25 / order (one order, both halves) | $25.00 |
 | Stencil | $1.50 | $1.50 |
-| Panel fee | $7.81 / panel | $7.81 |
+| Panel fee | ~$7.81 / panel | $7.81 |
 | SMT assembly joints | 284 joints/side x 2 x $0.0016 | $0.91 |
 | Hand-solder labour | $3.50 / order | $3.50 |
-| X-ray inspection (AD72 mux is TQFP-48, has visible leads -> NOT BGA/QFN) | likely $0 | $0.00 |
-| **JLC PCBA subtotal (excl. bare PCB)** | | **~$69.59** |
+| X-ray inspection (ADG732 mux is TQFP-48, has visible leads -> NOT BGA/QFN) | likely $0 | $0.00 |
+| **JLC PCBA subtotal, qty 2+2 (excl. bare PCB)** | | **~$200** |
 
-NOTE: JLC's cheaper Economic PCBA tier does NOT accept 4-layer boards,
-and both halves are 4-layer -> Standard PCBA is the only option. All
-populated SMD is on the bottom layer, so single-side placement is still
-correct -- no double-side setup fee. Decline conformal coating (a
-Standard-tier option): pointless for a desk keyboard, adds cost, and
-makes the later hand-soldering and any rework harder.
+NOTE: Economic PCBA is unavailable for this order because ENIG is an
+Economic-restricted finish (Economic also excludes castellated holes and
+some combos) -> Standard PCBA. All populated SMD is on the bottom layer,
+so single-side placement is still correct -- no double-side setup fee.
+Decline conformal coating (a Standard-tier option): pointless for a desk
+keyboard, adds cost, and makes the later hand-soldering and any rework
+harder.
 
 ### Bare PCBs (needed, fabricate+assemble in one JLC order)
 

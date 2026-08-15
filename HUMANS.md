@@ -44,8 +44,10 @@ calibrate, mechanical assembly.
 4. **No I2C pull-ups populated** (LHS R32/R33, RHS R31/R32). No OLED -> no
    I2C traffic -> DNP them.
 5. **All populated SMD is on the BOTTOM layer.** Order single-side
-   assembly, bottom side. No double-side fee needed. Economic PCBA is
-   NOT available (it rejects 4-layer boards) - use **Standard** tier.
+   assembly, bottom side. No double-side fee needed. Economic PCBA drops
+   out because ENIG is an Economic-restricted finish - use **Standard**
+   tier. Assembly quantity 2 per side (JLC min; qty 5 triples the
+   components cost, dominated by the ~$29 ADG732 mux per board).
 6. **Surface finish = ENIG** (order-page dropdown at JLC; NOT a Gerber
    property). Planar pads for the 0.5mm TQFP-48 mux, reliable castellated
    mounting for the RP2040 Zero, no lead, no corrosion. Avoid leaded HASL
@@ -78,8 +80,11 @@ calibrate, mechanical assembly.
 - [ ] On jlcpcb.com start a "PCB Assembly" order.
 - [ ] Upload Gerber zip for LEFT: `PCBs/left.zip`.
 - [ ] Upload `PCBs/bom_lhs.csv` and `PCBs/cpl_lhs.csv`.
-- [ ] Select **Standard** PCBA (Economic rejects 4-layer boards),
+- [ ] Select **Standard** PCBA (Economic drops out with ENIG),
       **bottom** side for placement. Decline conformal coating.
+- [ ] Set **assembly quantity to 2 per side** (JLC min). Default qty 5
+      costs ~$228/side in components; qty 2 is ~$92/side and keeps
+      DRV5053 demand (58) inside LCSC's ~230 stock.
 - [ ] **In the preview, walk through placements and verify rotations**
       (see critical fact #2). Fix and re-upload if wrong.
 - [ ] Repeat as a second order (or same order, second board) for RIGHT:

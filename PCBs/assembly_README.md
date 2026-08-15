@@ -38,13 +38,18 @@ Files in this directory for the **no-LED / no-OLED / UART** build:
 All 119 populated SMD parts per side are on the **BOTTOM** layer (B.Cu). The only
 top-side parts are through-hole (RP2040 Zero, USB-C, OLED header) or DNP
 resistors. So single-side placement covers everything -- no
-double-side assembly fee required. JLC's cheaper Economic PCBA tier is
-NOT available for this board (Economic rejects 4-layer boards; both
-halves are 4-layer), so select **Standard** PCBA and the **bottom** side
+double-side assembly fee required. JLC's cheaper Economic PCBA tier drops
+out for this order because ENIG (and castellated-hole styles) are
+Economic-restricted -- select **Standard** PCBA and the **bottom** side
 only. Decline the optional conformal coating (Standard-tier add-on): it
 adds cost/lead time, does nothing for a desk keyboard, and interferes
 with the later hand-soldering and any rework.
-when uploading.
+
+Set assembly **quantity = 2 per side** (JLC minimum, both tiers). The
+default 5+5 quotes ~$228/side in components (mux is ~$28.71 and the
+DRV5053 has tripled to ~$0.39 each, as of 2026-08-15); qty 2+2 lands
+components at ~$163 total and keeps sensor demand inside LCSC's ~230
+stock.
 
 ## CRITICAL -- rotation must be verified in JLC's upload preview
 
