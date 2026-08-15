@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "filename": "Lucca1.0.kicad_pcbRHS.kicad_pro",
+    "version": 1
+  },
+  "project": {
+    "files": []
+  },
+  "board": {
+    "design_settings": {
+      "defaults": {}
+    }
+  },
+  "pcbnew": {
+    "last_paths": {}
+  }
+}

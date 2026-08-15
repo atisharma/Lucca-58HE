@@ -75,7 +75,9 @@ rot +45 deg (CPL value 45). In the footprint's own frame, pin 1 is the
 bottom pad of the LEFT column (pads 1-12 left column, 13-24 top,
 25-36 right, 37-48 bottom). LHS pin-1 net = A7; RHS = A22.
 
-1. KiCad anchor: open the kicad_pcb, Alt+3 (3D viewer), orbit to the
+1. KiCad anchor: open the project (`PCBs/Lucca1.0.kicad_pcbLHS.kicad_pro`
+   in the KiCad 8 project manager; the bare .kicad_pcb needs its
+   .kicad_pro stub to open in the GUI), Alt+3 (3D viewer), orbit to the
    bottom face, find U1, note which physical corner of the board its
    pin-1 chamfer points to (use a landmark, e.g. the USB-C edge).
 2. JLC anchor: in the upload preview, click U1; the part graphic's
@@ -88,6 +90,13 @@ bottom pad of the LEFT column (pads 1-12 left column, 13-24 top,
    allow rotation edits at the preview stage) instead of re-uploading
    the CPL. If you do fix it there, note the corrected value and update
    cpl_lhs.csv / cpl_rhs.csv to match for the next order.
+
+### Verification log
+
+- 2026-08-15: U1 orientation verified in JLC's 3D preview, both halves --
+  the preview pin-1 dot aligned with the board's silkscreen pin-1 marker.
+  DRV5053 SOT-23 sensor orientation NOT yet verified in the preview --
+  spot-check 2-3 (incl. H25/H26 1.5U) before paying.
 
 ## How these files were generated (reproducible)
 
